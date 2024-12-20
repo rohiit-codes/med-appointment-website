@@ -15,7 +15,7 @@ const navigate = useNavigate()
                 <p>Book Appointment</p>
                 <p className='mt-3'>With 100+ Trusted Doctors</p>
             </div>
-            <button onClick={()=>{navigate('/login'); scrollTo(0,0)}} className='bg-white text-gray-600 text-sm hover:scale-105 transition-all duration-500 py-3 px-6 rounded-full mt-5'>Create account</button>
+            <button onClick={()=>{navigate('/login'); scrollTo(0,0)}} className='bg-white text-gray-600 text-sm text-center hover:scale-105 transition-all duration-500 py-3 px-6 rounded-full mt-5'>Create account</button>
         </div>
 
         {/* -------Right Side */}

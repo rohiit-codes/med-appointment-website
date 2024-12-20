@@ -12,7 +12,7 @@ const [token, setToken] = useState(true)
 
   return (
     <div className='flex items-center py-4 mb-5 text-sm border-b border-gray-400 justify-between'>
-        <img className='w-40 cursor-pointer' src={assets.logo} alt="" />
+        <img onClick={()=>{navigate('/'); scrollTo(0,0)}} className='w-40 cursor-pointer' src={assets.logo} alt="" />
         <ul className='hidden md:flex items-start gap-5 font-medium '>
             <NavLink to= '/'>
                 <li className='py-1'>HOME</li>
