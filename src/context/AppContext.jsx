@@ -1,11 +1,17 @@
 import { createContext } from "react";
 import { doctors } from "../assets/assets";
 
-export const AppContext = createContext()
+// Make sure your doctors data has _id property
+const doctorsWithIds = doctors.map((doc, index) => ({
+  ...doc,
+  _id: (index + 1).toString()
+}));
+
+export const AppContext = createContext();
 
 const AppContextProvider = (props) => {
     const value = {
-        doctors
+        doctors: doctorsWithIds
     }
 
     return (
