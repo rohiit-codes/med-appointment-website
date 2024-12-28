@@ -1,17 +1,17 @@
 import { createContext } from "react";
 import { doctors } from "../assets/assets";
 
-// Make sure your doctors data has _id property
-const doctorsWithIds = doctors.map((doc, index) => ({
-  ...doc,
-  _id: (index + 1).toString()
-}));
+
 
 export const AppContext = createContext();
 
 const AppContextProvider = (props) => {
+
+    const currencySymbol = "₹"
+
     const value = {
-        doctors: doctorsWithIds
+        doctors,
+        currencySymbol,
     }
 
     return (
